@@ -16,27 +16,27 @@ while playing == True:
     # if player chooses "q" break out the loop
     if playerChoice == "q":
         playing = False
-    # computer and player make the same choice
+    # player choice is the same as the computer's choice
     elif playerChoice == computerChoice:
         print("Tie!")
     # player choice is rock
-    elif playerChoice == "Rock" and computerChoice == "Paper":
-       print("You lose! " + computerChoice + " covers " + playerChoice)
     elif playerChoice == "Rock" and computerChoice == "Scissors":
         print("You win! " + playerChoice + " smashes " + computerChoice)
+    elif playerChoice == "Rock" and computerChoice == "Paper":
+       print("You lose! " + computerChoice + " covers " + playerChoice)
 
     # player choice is paper
+    elif playerChoice == "Paper" and computerChoice == "Rock":
+        print("You win! " + playerChoice + " covers " + computerChoice)
     elif playerChoice == "Paper" and computerChoice == "Scissors":
         print("You lose! " + computerChoice + " covers " + playerChoice)
-    elif playerChoice == "Paper" and computerChoice == "Rock":
-        print("You win! " + playerChoice + " smashes " + computerChoice)
 
     # player choice is scissors
-    elif playerChoice == "Scissors" and computerChoice == "Rock":
-        print("You lose! " + computerChoice + " crushes " + playerChoice)
     elif playerChoice == "Scissors" and computerChoice == "Paper":
         print("You win! " + playerChoice + " cut " + computerChoice)
-        
+    elif playerChoice == "Scissors" and computerChoice == "Rock":
+        print("You lose! " + computerChoice + " crushes " + playerChoice)
+
     # player entered something other than a valid choice
     else:
         print("That's not a valid play. Check your spelling!")
