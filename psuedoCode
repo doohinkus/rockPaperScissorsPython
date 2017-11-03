@@ -1,0 +1,26 @@
+#import random number specifically integers
+
+
+#create a list of computer choice options, list starts at 0. 0=Rock, 1=Paper...
+
+
+#assign a random number that corresponds to one of the above choices
+
+
+#set playing to true
+
+
+    # if player chooses "q" break out the loop
+
+    # computer and player make the same choice
+
+    # player choice is rock
+
+    # player choice is paper
+
+    # player choice is scissors
+
+    # player makes a choice outside our parameters
+
+
+    # make another random choice for the computer
