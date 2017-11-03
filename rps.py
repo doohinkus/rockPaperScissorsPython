@@ -20,24 +20,24 @@ while playing == True:
     elif playerChoice == computerChoice:
         print("Tie!")
     # player choice is rock
-    elif playerChoice == "Rock":
-        if computerChoice == "Paper":
-            print("You lose! " + computerChoice + " covers " + playerChoice)
-        else:
-            print("You win! " + playerChoice + " smashes " + computerChoice)
+    elif playerChoice == "Rock" and computerChoice == "Paper":
+       print("You lose! " + computerChoice + " covers " + playerChoice)
+    elif playerChoice == "Rock" and computerChoice == "Scissors":
+        print("You win! " + playerChoice + " smashes " + computerChoice)
+
     # player choice is paper
-    elif playerChoice == "Paper":
-        if computerChoice == "Scissors":
-            print("You lose! " + computerChoice + " cut " + playerChoice)
-        else:
-            print("You win! " + playerChoice + " covers " + computerChoice)
+    elif playerChoice == "Paper" and computerChoice == "Scissors":
+        print("You lose! " + computerChoice + " covers " + playerChoice)
+    elif playerChoice == "Paper" and computerChoice == "Rock":
+        print("You win! " + playerChoice + " smashes " + computerChoice)
+
     # player choice is scissors
-    elif playerChoice == "Scissors":
-        if computerChoice == "Rock":
-            print("You lose... " + computerChoice + " smashes " + playerChoice)
-        else:
-            print("You win! " + playerChoice + " cuts " + computerChoice)
-    # player makes a choice outside our parameters
+    elif playerChoice == "Scissors" and computerChoice == "Rock":
+        print("You lose! " + computerChoice + " crushes " + playerChoice)
+    elif playerChoice == "Scissors" and computerChoice == "Paper":
+        print("You win! " + playerChoice + " cut " + computerChoice)
+        
+    # player entered something other than a valid choice
     else:
         print("That's not a valid play. Check your spelling!")
 
